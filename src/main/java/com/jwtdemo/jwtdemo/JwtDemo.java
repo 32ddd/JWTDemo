@@ -28,10 +28,9 @@ public class JwtDemo {
             //2.获取用户信息
             user = retriever.retrieve();
             if(user != null) {
-                String json = user.getAppListJson();
-                logger.info("json  " + json);
-                logger.info("applist  " + JSON.toJSONString(user.getAppListJson()));
-                logger.info("user  " + JSON.toJSONString(user));
+                logger.info("applist====" + JSON.toJSONString(user.getAppListJson()));
+                logger.info("user====" + JSON.toJSONString(user));
+                logger.info("payLoad====" + JSON.toJSONString(user.payload()));
             }
         } catch (Exception e) {
             logger.warn("Retrieve SSO user failed" , e);
