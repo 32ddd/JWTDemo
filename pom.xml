@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.JwtDemo</groupId>
     <artifactId>jwtdemo</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>jwtdemo</name>
     <description>Demo project for Spring Boot</description>
 
